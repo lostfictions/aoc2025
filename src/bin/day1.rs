@@ -1,4 +1,4 @@
-use std::fs::read_to_string;
+use advent2025::read_input;
 
 fn _part1(input: &str) -> u32 {
     let mut value = 50i32;
@@ -52,7 +52,7 @@ fn _part2(input: &str) -> u32 {
 }
 
 fn main() {
-    let input = read_to_string("./inputs/1").expect("couldn't read file");
+    let input = read_input(file!());
 
     // let res = _part1(&input);
     let res = _part2(&input);
